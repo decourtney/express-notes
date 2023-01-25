@@ -16,7 +16,7 @@
 
 Express Notes is an easy-to-use, readily available, and central location to store your honey-do list, bucket list, to-do list, or any other list you can possibly imagine! Add and remove list items as needed from any location. Share the list with your spouse and you will never run out of tasks! 
 
-Deployed Project: www.notsureyet.com
+Deployed Project: https://express-notes-with-express.herokuapp.com/
 
 <br>
   <div>  

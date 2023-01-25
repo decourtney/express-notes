@@ -60,6 +60,9 @@ app.delete('/api/notes/:id', (req, res) =>
 app.get('*', (req, res) =>
     res.sendFile(path.join(__dirname, 'public', 'index.html')));
 
-app.listen(PORT, () =>
-    console.log(`App listening on port ${PORT} 🚀`)
-);
+let server = app.listen(PORT, function ()
+{
+    let host = server.address().address;
+    let port = server.address().port;
+    console.log("server is listening at http://%s:%s", host, port);
+});
