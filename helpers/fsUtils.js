@@ -37,13 +37,11 @@ const readAndRemove = (id, file) => {
       console.error(err);
     } else {
       const parsedData = JSON.parse(data);
-      console.log(parsedData);
+
       for (let i = 0; i < parsedData.length; i++) {
         if (parsedData[i].id === id) {
           parsedData.splice(i, 1);
-          console.log(parsedData);
-          console.log(`Attempting to write to db: ${parsedData}`);
-          // writeToFile(parsedData, file);
+          writeToFile(parsedData, file);
         }
       };
     }
